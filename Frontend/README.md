@@ -1,44 +1,86 @@
-# Assessment Manager Frontend
+# Assessment Manager Backend
+
+This is the backend application for the Assessment Manager project. It is built using Node.js and Express and provides the RESTful APIs required for managing assessments.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Testing](#testing)
+- [Directory Structure](#directory-structure)
+- [Contributing](#contributing)
 
 ## Introduction
-This project is an Angular application for managing assessments. It includes features for handling candidates and questions, with role-based access control.
 
-## Setting Up the Development Environment
+The backend of the Assessment Manager application provides APIs necessary to manage candidates, questions, and assessments. It is built using Node.js and Express, ensuring a scalable and maintainable server-side solution.
 
-1. **Install Node.js and npm**:
-   - Download and install Node.js from [nodejs.org](https://nodejs.org/). This will also install npm (Node Package Manager).
+## Installation
 
-2. **Clone the Repository**:
-   - Open your terminal or PowerShell.
-   - Run: `git clone <repository-url>` (replace `<repository-url>` with the URL of your GitHub repository).
+To set up the development environment and install the necessary dependencies, follow these steps:
 
-3. **Navigate to the Project Directory**:
-   - Run: `cd assessment-manager-frontend`
+1. **Clone the repository:**
 
-4. **Install Dependencies**:
-   - Run: `npm install` to install all required packages.
+    ```bash
+    git clone https://github.com/sakshisinghcreates/Mckinsey_Assignment_SakshiSingh.git
+    ```
+
+2. **Navigate to the backend directory:**
+
+    ```bash
+    cd assessment-manager-backend
+    ```
+
+3. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+4. **Set up environment variables:**
+
+   Create a `.env` file in the root directory of the project with the following content:
+
+    ```plaintext
+    MONGO_URI=mongodb://localhost:27017/myDatabase
+    ```
+
+   Replace `myDatabase` with your desired database name.
 
 ## Running the Application
 
-1. **Start the Development Server**:
-   - Run: `ng serve`
-   - Open your web browser and go to `http://localhost:4200` to view the application.
+To run the application locally:
 
-## Testing the Application
+1. **Start the server:**
 
-1. **Run Unit Tests**:
-   - Run: `ng test`
-   - This will execute the unit tests and show the results in the terminal.
+    ```bash
+    npm run dev
+    ```
 
-## Project Structure
+   The backend server will be running at `http://localhost:3000`.
 
-- `src/app/app.component.ts`: Main application component.
-- `src/app/app.routes.ts`: Application routing configuration.
-- `src/app/question`: Contains components and modules related to questions.
-- `src/app/candidate`: Contains components and modules related to candidates.
-- `src/app/services`: Contains services used by the application.
+## Testing
 
-## Additional Notes
+To run tests for the application:
 
-- Make sure to check the application in different browsers to ensure compatibility.
+1. **Run unit tests:**
+
+    ```bash
+    npm test
+    ```
+
+## Directory Structure
+
+- `src/`: Contains the source code for the backend.
+  - `routes/`: Contains the route handlers for the API endpoints.
+  - `controllers/`: Contains the business logic for handling requests.
+  - `models/`: Contains the data models and schema definitions.
+  - `index.ts`: The main application file where the Express server is configured and MongoDB connection is established.
+
+## Contributing
+
+Contributions to the Assessment Manager Backend are welcome! Please follow the guidelines below:
+
+1. **Fork the repository.**
+2. **Create a new branch for your changes.**
+3. **Submit a pull request with a clear description of the changes.**
 
