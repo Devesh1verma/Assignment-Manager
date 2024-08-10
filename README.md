@@ -21,7 +21,7 @@ To set up the development environment and install the necessary dependencies, fo
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/sakshisinghcreates/Mckinsey_Assignment_SakshiSingh.git
+    git clone https://github.com/Devesh1verma/Assignment-Manager.git
     ```
 
 2. **Navigate to the backend directory:**
